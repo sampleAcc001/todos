@@ -1,0 +1,36 @@
+<nav class="bg-blue-500 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <span class="text-xl font-bold">MyApp</span>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <a href="#" class="hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                <a href="#" class="hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                <a href="#" class="hover:bg-blue-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-white hover:bg-blue-600 p-2 rounded-md">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+        <a href="#" class="block px-4 py-2 text-sm hover:bg-blue-600">Home</a>
+        <a href="#" class="block px-4 py-2 text-sm hover:bg-blue-600">About</a>
+        <a href="#" class="block px-4 py-2 text-sm hover:bg-blue-600">Services</a>
+        <a href="#" class="block px-4 py-2 text-sm hover:bg-blue-600">Contact</a>
+    </div>
+</nav>

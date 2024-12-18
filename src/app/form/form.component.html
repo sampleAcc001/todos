@@ -1,0 +1,51 @@
+<div class="p-6 max-h-screen overflow-y-auto">
+    <form class="space-y-4">
+        <!-- Task Title -->
+        <div>
+            <label for="taskTitle" class="block text-sm font-medium text-gray-700">Task Title</label>
+            <input id="taskTitle" formControlName="taskTitle" type="text"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                placeholder="Enter task title" required />
+            <div class="text-red-500 text-xs">
+                Task Title is required.
+            </div>
+        </div>
+
+        <!-- Priority -->
+        <div>
+            <label for="priority" class="block text-sm font-medium text-gray-700">Priority</label>
+            <select id="priority" formControlName="priority"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                required>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+                <option value="Normal">Normal</option>
+            </select>
+        </div>
+
+        <!-- Date -->
+        <div>
+            <label for="dueDate" class="block text-sm font-medium text-gray-700">Due Date</label>
+            <input id="dueDate" formControlName="dueDate" type="date"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                required />
+        </div>
+
+        <!-- Description -->
+        <div>
+            <label for="description" class="block text-sm font-medium text-gray-700">Description</label>
+            <textarea id="description" formControlName="description" rows="4"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                placeholder="Enter task description"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="flex justify-end">
+            <button type="submit"
+                class="bg-blue-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+                Add Todo
+            </button>
+        </div>
+    </form>
+</div>
